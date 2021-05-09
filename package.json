@@ -1,0 +1,24 @@
+{
+  "name": "gf.network-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlphaWallet/gf.network-proxy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlphaWallet/gf.network-proxy/issues"
+  },
+  "homepage": "https://github.com/AlphaWallet/gf.network-proxy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "superagent": "^5.2.2"
+  }
+}
