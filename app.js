@@ -17,6 +17,16 @@ app.get("/top-news/", (req, res, next) => {
     });
 });
 
+app.get("/bilibili/trending/", (req, res, next) => {
+    res.header( 'Access-Control-Allow-Origin','*' );
+    const query = "https://api.bilibili.com/x/web-interface/dynamic/region?&jsonp=jsonp&ps=10&rid=1";
+    request.get(query).then((result) => {
+        res.send(JSON.parse(result.text).data.archives)
+    }).catch((err) => {
+        res.send(err);
+    })
+});
+
 async function callNewsAPI(apiKeyIndex) {
     const query = `https://newsapi.org/v2/top-headlines?country=cn&apiKey=${apiKeysNews[apiKeyIndex]}`;
     try {
