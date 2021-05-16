@@ -19,6 +19,7 @@
   "homepage": "https://github.com/AlphaWallet/gf.network-proxy#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "node-html-parser": "^3.3.0",
     "superagent": "^5.2.2"
   }
 }
