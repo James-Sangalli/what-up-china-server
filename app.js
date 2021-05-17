@@ -6,7 +6,8 @@ const parse = require("node-html-parser").parse;
 const apiKeysNews = [
     "6d7709b0ec234faab6e438466941c2ae",
     "15e281928b994633ab09b55784ce35cd",
-    "0e9d878eeb994e5087ad30e40e5706db"
+    "0e9d878eeb994e5087ad30e40e5706db",
+    "220c2dd1a5e549e7beab64f259af5675"
 ]
 
 app.get("/baidu/hot-news/", (req, res, next) => {
